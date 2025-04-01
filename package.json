@@ -12,6 +12,8 @@
   "dependencies": {
     "axios": "^1.8.4",
     "dotenv": "^16.4.7",
-    "open": "^10.1.0"
+    "express": "^5.1.0",
+    "open": "^10.1.0",
+    "sqlite3": "^5.1.7"
   }
 }

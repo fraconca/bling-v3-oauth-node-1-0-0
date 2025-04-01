@@ -1,6 +1,6 @@
 # 🔐 Bling V3 OAuth com Node.js
 
-Este projeto é uma automação completa do processo de geração de tokens de acesso (`access_token` e `refresh_token`) da **API Bling V3**, utilizando Node.js + Express + SQLite.
+Este projeto é uma automação completa do processo de geração de tokens OAuth2 de acesso (`access_token` e `refresh_token`) da **API Bling V3**, utilizando Node.js + Express + SQLite sem precisar do Insomnia ou Postman.
 
 > 📌 Ideal para quem deseja integrar o Bling V3 com sistemas externos (ex: WMS, ERP, etc.) sem precisar usar o Insomnia manualmente.
 
@@ -37,7 +37,21 @@ Em resumo:
 🛡️ Faz a troca automática do code por access_token e refresh_token.
 💾 Salva os tokens tanto em um arquivo JSON quanto em um banco de dados SQLite (leve e fácil de usar).
 
-# 🧱 Para ler o Banco SQLite
+
+---
+
+## Fluxo automatizado
+
+- Abre a URL de autenticação do Bling no navegador.
+- Usuário faz login e autoriza o app.
+- Bling redireciona para http://localhost:3000/callback?code=...
+- O código code é capturado automaticamente.
+- Um access_token e um refresh_token são gerados e:
+    - Salvos em tokens.json.
+    - Salvos no banco SQLite bling.db.
+
+
+## 🧱 Para ler o Banco SQLite
 
 Online 
 https://inloop.github.io/sqlite-viewer/
@@ -51,20 +65,32 @@ https://sqlitebrowser.org/
 ---
 
 
-## 🚀 Como usar
+## 🧪 Passo a passo para executar o projeto 
 
-### 1. Clone o projeto
+1. Clone o projeto
+
+Crie uma pasta do projeto e entre nela:
+
+```bash
+mkdir bling-v3-oauth-node && cd bling-v3-oauth-node
+```
+
+2. Instale dependências
+
+```bash
+npm install
+```
+
+3. Rode o projeto
 
 ```bash
 git clone https://github.com/seu-usuario/bling-v3-oauth-node.git
 cd bling-v3-oauth-node
 ```
 
-### 2. Instale as dependências
 
-```bash
-npm install
-```
+---
+
 
 ### 3. Configure as variáveis de ambiente
 Crie um arquivo .env:
@@ -102,12 +128,17 @@ node server.js
 ```bash
 bling-v3-oauth-node/
 ├── .env
-├── server.js         # Servidor Express para capturar o code
-├── bling.js          # Lógica de troca de code por tokens
-├── db.js             # Banco SQLite para armazenar os tokens
-├── tokens.json       # Tokens salvos em formato JSON
-├── package.json
+├── server.js
+├── bling.js
+├── db.js
+├── tokens.json
 ```
+
+.env:           Armazenamento seguro das credenciais (Client ID, Secret, Redirect URI).
+server.js:      Servidor Express para iniciar o fluxo e capturar o code via callback.
+bling.js:       Lógica para trocar o authorization_code por tokens usando a API do Bling.
+db.js:          Criação e conexão com banco SQLite local para armazenar tokens.
+tokens.json:    Backup local dos tokens em arquivo.
 
 
 ## 🤝 Contribuições
@@ -122,9 +153,8 @@ MIT
 
 ## 🙌 Créditos
 
-Criado com base no vídeo tutorial de geração de tokens Bling V3 + Insomnia
-Assista no YouTube
+Criado com base no [video](https://drive.google.com/file/d/14TKngA7m74Njk3unf6Ruku70V0XuxaAJ/view) tutorial de integração com o WMS da Fontes.Log  e documentação [documentação](https://docs.google.com/document/d/14aKbt9V6ZCVSKR1qHGpqfuRjSjJgpCmXYRgPoKHD_KI/edit?pli=1&tab=t.0).
 
 
 ## 🔍 Palavras-chave
-bling api, bling oauth, bling v3, node.js bling integration, oauth2 bling, refresh token, bling express node, automação bling, yampi, yampi checkout, shopify, shopify bling, shopify integration, shopify tema, shopify partner
+bling api, bling oauth, bling v3, node.js bling integration, oauth2 bling, refresh token, bling express node, automação bling, yampi, yampi checkout, shopify, shopify bling, shopify integration, shopify tema, shopify partner, insomnia, postman
