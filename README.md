@@ -97,4 +97,4 @@ Criado com base no vídeo tutorial de geração de tokens Bling V3 + Insomnia
 Assista no YouTube
 
 ## 🔍 Palavras-chave
-bling api, bling oauth, bling v3, node.js bling integration, oauth2 bling, refresh token, bling express node, automação bling
+bling api, bling oauth, bling v3, node.js bling integration, oauth2 bling, refresh token, bling express node, automação bling, yampi, yampi checkout, shopify, shopify bling, shopify integration, shopify tema, shopify partner
