@@ -37,9 +37,6 @@ Em resumo:
 🛡️ Faz a troca automática do code por access_token e refresh_token.
 💾 Salva os tokens tanto em um arquivo JSON quanto em um banco de dados SQLite (leve e fácil de usar).
 
-
----
-
 ## Fluxo automatizado
 
 - Abre a URL de autenticação do Bling no navegador.
@@ -49,6 +46,9 @@ Em resumo:
 - Um access_token e um refresh_token são gerados e:
     - Salvos em tokens.json.
     - Salvos no banco SQLite bling.db.
+
+
+---
 
 
 ## 🧱 Para ler o Banco SQLite
@@ -69,19 +69,60 @@ https://sqlitebrowser.org/
 
 1. Clone o projeto
 
-Crie uma pasta do projeto e entre nela:
+2. Crie uma pasta do projeto e entre nela:
 
 ```bash
 mkdir bling-v3-oauth-node && cd bling-v3-oauth-node
 ```
 
-2. Instale dependências
+3. Instale dependências
 
 ```bash
 npm install
 ```
 
-3. Rode o projeto
+4. Crie um aplicativo Bling (se ainda não tiver um)
+
+É necessário gerar o *CLIENT_ID* e o *CLIENT_SECRET* e preencher o arquivo *.env* com os dados gerados no Bling por um [aplicativo](https://www.bling.com.br/cadastro.aplicativos.php#/list) privado. Caso não tenha criado, cadastre um novo aplicativo [aqui](https://www.bling.com.br/cadastro.aplicativos.php#/form) seguindo os passos abaixo:
+
+- Tipo de aplicativo > API
+- Selecione o uso do aplicativo > Privado
+- Clique em *Próximo*
+
+- Suba um *Logo* em SVG (o tamanho permitido é de 500 x 500 px)
+- Preencha os campos:
+    - Nome: Bling OAuth Node
+    - Categoria: Escolha uma categoria
+    - Descrição: "Automação completa do processo de geração de tokens OAuth2. Desenvolvido por: Flávio Conca."
+    - Link de redirecionamento: coloque exatamente o que está no seu .env, ou seja:
+
+```bash
+http://localhost:3000/callback
+```
+
+- Selecione o(s) escopo(s) desejado(s)
+- Informações para contato 
+- Nome do desenvolvedor
+- Email
+- Celular
+- Clique em *Salvar Dados Básicos*
+
+### Clique em Informações do APP
+
+- Client ID → copie e cole no .env como:
+
+```bash
+CLIENT_ID=seu_client_id
+```
+```bash
+CLIENT_SECRET=seu_client_secret
+```
+
+
+---
+
+
+5. Rode o projeto
 
 ```bash
 git clone https://github.com/seu-usuario/bling-v3-oauth-node.git
