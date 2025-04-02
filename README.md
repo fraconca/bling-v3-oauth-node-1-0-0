@@ -84,7 +84,7 @@ npm install
 
 4. Agora crie um aplicativo Bling (se ainda não tiver um)
 
-É necessário gerar o *CLIENT_ID* e o *CLIENT_SECRET* e preencher o arquivo *.env* com os dados gerados no Aplicativo Privado do [Bling](https://www.bling.com.br/cadastro.aplicativos.php#/list). Caso não tenha criado, cadastre um novo aplicativo [aqui](https://www.bling.com.br/cadastro.aplicativos.php#/form) e siga os passos abaixo:
+É necessário gerar o *CLIENT_ID* e o *CLIENT_SECRET* e preencher o arquivo *.env* com os dados gerados no Aplicativo Privado do [API Bling V3 OAuth](https://www.bling.com.br/cadastro.aplicativos.php#/list). Caso não tenha criado, cadastre um novo aplicativo [aqui](https://www.bling.com.br/cadastro.aplicativos.php#/form) e siga os passos abaixo:
 
 - Tipo de aplicativo > API
 - Selecione o uso do aplicativo > Privado
@@ -107,6 +107,9 @@ http://localhost:3000/callback
     - Nome do desenvolvedor
     - Email
     - Celular
+
+![Exemplo ](https://github.com/fraconca/bling-v3-oauth-node-1-0-0/blob/master/img/img-dados-basicos.png?raw=true)
+
 - Clique em *Salvar Dados Básicos*
 
 5. Clique em Informações do APP
