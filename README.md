@@ -147,6 +147,8 @@ Refresh Token: 347b639b4caa6c3a7c1ffda6107d549de2182d3c
 - O servidor abrirá automaticamente o navegador com a URL de login do Bling. O código será capturado automaticamente pela rota /callback. Os tokens serão salvos em *tokens.json* e no banco SQLite *bling.db*.
 
 
+---
+
 ## 📁 Estrutura do Projeto
 
 ```bash
