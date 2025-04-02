@@ -108,7 +108,9 @@ http://localhost:3000/callback
     - Email
     - Celular
 
+Exemplo:
 ![Exemplo ](https://github.com/fraconca/bling-v3-oauth-node-1-0-0/blob/master/img/img-dados-basicos.png?raw=true)
+
 
 - Clique em *Salvar Dados Básicos*
 
