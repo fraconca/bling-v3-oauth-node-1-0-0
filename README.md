@@ -47,11 +47,9 @@ Em resumo:
     - Salvos em tokens.json.
     - Salvos no banco SQLite bling.db.
 
-
 ---
 
-
-## 🧱 Para ler o Banco SQLite
+## OPCIONAL 🧱 Para ler o Banco SQLite
 
 Online 
 https://inloop.github.io/sqlite-viewer/
@@ -61,18 +59,21 @@ https://beta.sqliteviewer.app/
 Software
 https://sqlitebrowser.org/ 
 
-
 ---
 
 
-## 🧪 Passo a passo para executar o projeto 
+# 🧪 Passo a passo para executar o projeto 
 
-1. Clone o projeto
-
-2. Crie uma pasta do projeto e entre nela:
+1. Crie uma pasta do projeto e entre nela:
 
 ```bash
 mkdir bling-v3-oauth-node && cd bling-v3-oauth-node
+```
+
+2. Clone o projeto na pasta:
+
+```bash
+git clone https://github.com/seu-usuario/bling-v3-oauth-node.git
 ```
 
 3. Instale dependências
@@ -81,9 +82,9 @@ mkdir bling-v3-oauth-node && cd bling-v3-oauth-node
 npm install
 ```
 
-4. Crie um aplicativo Bling (se ainda não tiver um)
+4. Agora crie um aplicativo Bling (se ainda não tiver um)
 
-É necessário gerar o *CLIENT_ID* e o *CLIENT_SECRET* e preencher o arquivo *.env* com os dados gerados no Bling por um [aplicativo](https://www.bling.com.br/cadastro.aplicativos.php#/list) privado. Caso não tenha criado, cadastre um novo aplicativo [aqui](https://www.bling.com.br/cadastro.aplicativos.php#/form) seguindo os passos abaixo:
+É necessário gerar o *CLIENT_ID* e o *CLIENT_SECRET* e preencher o arquivo *.env* com os dados gerados no Aplicativo Privado do [Bling](https://www.bling.com.br/cadastro.aplicativos.php#/list). Caso não tenha criado, cadastre um novo aplicativo [aqui](https://www.bling.com.br/cadastro.aplicativos.php#/form) e siga os passos abaixo:
 
 - Tipo de aplicativo > API
 - Selecione o uso do aplicativo > Privado
@@ -100,68 +101,50 @@ npm install
 http://localhost:3000/callback
 ```
 
-- Selecione o(s) escopo(s) desejado(s)
-- Informações para contato 
-- Nome do desenvolvedor
-- Email
-- Celular
+- Selecione o escopo desejado
+- Preencher os campos:
+    - Informações para contato 
+    - Nome do desenvolvedor
+    - Email
+    - Celular
 - Clique em *Salvar Dados Básicos*
 
-### Clique em Informações do APP
+5. Clique em Informações do APP
 
-- Client ID → copie e cole no .env como:
+- Copie e cole no .env → CLIENT_ID e CLIENT_SECRET:
 
 ```bash
 CLIENT_ID=seu_client_id
-```
-```bash
 CLIENT_SECRET=seu_client_secret
 ```
 
-
----
-
-
-5. Rode o projeto
-
-```bash
-git clone https://github.com/seu-usuario/bling-v3-oauth-node.git
-cd bling-v3-oauth-node
-```
-
-
----
-
-
-### 3. Configure as variáveis de ambiente
-Crie um arquivo .env:
-
-```bash
-CLIENT_ID=seu_client_id_gerado_no_bling
-CLIENT_SECRET=seu_client_secret_gerado_no_bling
-REDIRECT_URI=http://localhost:3000/callback
-PORT=3000
-```
-
-
----
-
-
-> 🔐 O CLIENT_ID e CLIENT_SECRET são obtidos no painel do Bling em: Configurações > Cadastros de Aplicativos
-
-
-## ▶️ Rodando o servidor
+6. Abra seu navegador e inicie o script pelo Node.JS
 
 ```bash
 node server.js
 ```
 
-1 - O servidor abrirá automaticamente o navegador com a URL de login do Bling.
-2 - Faça login e autorize o aplicativo.
-3- O código será capturado automaticamente pela rota /callback.
-4 - Os tokens serão salvos em:
-    tokens.json
-    banco SQLite bling.db
+Você será redirecionado automaticamente para autorizar a aplicação. 
+- Clique em *Autorizar*
+
+Obs.: Caso não seja redireiconado copie o *Link de Convite* e abra no navegador e clique em *Autorizar* e volte para o passo 6 para rodar o server.js. 
+
+#### Se tudo funcionar vai aparecer em seu navegador a mensagem: 
+
+*✅ Código recebido! Os tokens estão sendo processados...*
+
+#### Abra o *Terminal* e confira:
+
+✅ Tokens obtidos com sucesso!
+
+Access Token: 6eefd86aa646bb588669d8c07f1291b3a34b53ff
+Refresh Token: 347b639b4caa6c3a7c1ffda6107d549de2182d3c
+
+💾 Tokens salvos em tokens.json
+📥 Tokens salvos no banco com sucesso!
+
+- 🔐 O Refresh Token expira em 60 segundos. Após este tempo será necessário gerar outro Refresh Token.
+- O servidor abrirá automaticamente o navegador com a URL de login do Bling. O código será capturado automaticamente pela rota /callback. Os tokens serão salvos em *tokens.json* e no banco SQLite *bling.db*.
 
 
 ## 📁 Estrutura do Projeto

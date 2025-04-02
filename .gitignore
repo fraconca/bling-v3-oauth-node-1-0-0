@@ -1,2 +1,4 @@
+.env
+*.ini
+*.db
 node_modules
-_

@@ -33,4 +33,4 @@
       console.log(`🚀 Servidor rodando em http://localhost:${PORT}`);
       console.log('🔗 Acesse essa URL para iniciar o fluxo de autenticação...');
     });
-  })();  
+  })();
