@@ -164,19 +164,15 @@ bling-v3-oauth-node/
 ```
 
 - .env
-rmazenamento seguro das credenciais (Client ID, Secret, Redirect URI).
-
+    - Armazenamento seguro das credenciais (Client ID, Secret, Redirect URI).
 - server.js
-Servidor Express para iniciar o fluxo e capturar o code via callback.
-
+    - Servidor Express para iniciar o fluxo e capturar o code via callback.
 - bling.js
-Lógica para trocar o authorization_code por tokens usando a API do Bling.
-
+    - Lógica para trocar o authorization_code por tokens usando a API do Bling.
 - db.js
-Cria conexão com banco SQLite local para armazenar tokens.
-
+    - Cria conexão com banco SQLite local para armazenar tokens.
 - tokens.json
-Backup local dos tokens em arquivo.
+    - Backup local dos tokens em arquivo.
 
 
 ## Contribuições
