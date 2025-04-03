@@ -1,19 +1,19 @@
-# 🔐 Bling V3 OAuth com Node.js
+# Bling V3 OAuth com Node.js
 
 Este projeto é uma automação completa do processo de geração de tokens OAuth2 de acesso (`access_token` e `refresh_token`) da **API Bling V3**, utilizando Node.js + Express + SQLite sem precisar do Insomnia ou Postman.
 
-> 📌 Ideal para quem deseja integrar o Bling V3 com sistemas externos (ex: WMS, ERP, etc.) sem precisar usar o Insomnia manualmente.
+> Ideal para quem deseja integrar o Bling V3 com sistemas externos (ex: WMS, ERP, etc.) sem precisar usar o Insomnia manualmente.
 
-## 🧠 Por que automatizar isso?
+## Por que automatizar isso?
 
 O Bling usa OAuth 2.0 para autenticação, mas o processo de gerar tokens pode ser manual e repetitivo. Esse projeto automatiza isso para você, de forma segura e reutilizável.
 
-## 📚 Requisitos
+## Requisitos
 
 - Node.js 18 ou superior
 - SQLite (já incluso no projeto via sqlite3)
 
-## 🛠️ Dependências
+## Dependências
 
 - express
 - axios
@@ -21,7 +21,7 @@ O Bling usa OAuth 2.0 para autenticação, mas o processo de gerar tokens pode s
 - dotenv
 - open
 
-## ✨ O que *bling-auth.js* faz?
+## O que *bling-auth.js* faz?
 
 - Gera o link de autorização automaticamente.
 - Abre automaticamente no navegador.
@@ -33,9 +33,9 @@ O Bling usa OAuth 2.0 para autenticação, mas o processo de gerar tokens pode s
 
 Em resumo:
 
-🧠 Vai rodar um servidor Express para capturar automaticamente o code após o redirecionamento.
-🛡️ Faz a troca automática do code por access_token e refresh_token.
-💾 Salva os tokens tanto em um arquivo JSON quanto em um banco de dados SQLite (leve e fácil de usar).
+1. Vai rodar um servidor Express para capturar automaticamente o code após o redirecionamento.
+2. Faz a troca automática do code por access_token e refresh_token.
+3. Salva os tokens tanto em um arquivo JSON quanto em um banco de dados SQLite (leve e fácil de usar).
 
 ## Fluxo automatizado
 
@@ -49,7 +49,7 @@ Em resumo:
 
 ---
 
-## OPCIONAL 🧱 Para ler o Banco SQLite
+## OPCIONAL: Para ler o Banco SQLite
 
 Online 
 https://inloop.github.io/sqlite-viewer/
@@ -148,13 +148,13 @@ Refresh Token: 347b639b4caa6c3a7c1ffda6107d549de2182d3c
 💾 Tokens salvos em tokens.json
 📥 Tokens salvos no banco com sucesso!
 
-- 🔐 O Refresh Token expira em 60 segundos. Após este tempo será necessário gerar outro Refresh Token.
+- O Refresh Token expira em 60 segundos. Após este tempo será necessário gerar outro Refresh Token.
 - O servidor abrirá automaticamente o navegador com a URL de login do Bling. O código será capturado automaticamente pela rota /callback. Os tokens serão salvos em *tokens.json* e no banco SQLite *bling.db*.
 
 
 ---
 
-## 📁 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```bash
 bling-v3-oauth-node/
@@ -172,20 +172,20 @@ db.js:          Criação e conexão com banco SQLite local para armazenar token
 tokens.json:    Backup local dos tokens em arquivo.
 
 
-## 🤝 Contribuições
+## Contribuições
 
 Sinta-se à vontade para enviar PRs, abrir issues ou compartilhar este projeto com outros desenvolvedores que usam Bling.
 
 
-## 📄 Licença
+## Licença
 
 MIT
 
 
-## 🙌 Créditos
+## Créditos
 
 Criado com base no [video](https://drive.google.com/file/d/14TKngA7m74Njk3unf6Ruku70V0XuxaAJ/view) e tutorial de integração com o WMS da Fontes.Log pela [documentação](https://docs.google.com/document/d/14aKbt9V6ZCVSKR1qHGpqfuRjSjJgpCmXYRgPoKHD_KI/edit?pli=1&tab=t.0) da DDS Informática.
 
 
-## 🔍 Palavras-chave
+## Palavras-chave
 bling api, bling oauth, bling v3, node.js bling integration, oauth2 bling, refresh token, bling express node, automação bling, yampi, yampi checkout, shopify, shopify bling, shopify integration, shopify tema, shopify partner, insomnia, postman
