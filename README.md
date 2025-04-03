@@ -174,7 +174,7 @@ tokens.json:    Backup local dos tokens em arquivo.
 
 ## Contribuições
 
-Sinta-se à vontade para enviar PRs, abrir issues ou compartilhar este projeto com outros desenvolvedores que usam Bling.
+Aceito PRs, abrir issues ou compartilhar este projeto com outros desenvolvedores que usam Bling.
 
 
 ## Licença
@@ -184,7 +184,7 @@ MIT
 
 ## Créditos
 
-[Video](https://drive.google.com/file/d/14TKngA7m74Njk3unf6Ruku70V0XuxaAJ/view) tutorial da WMS da *DDS Informática* pela [documentação](https://docs.google.com/document/d/14aKbt9V6ZCVSKR1qHGpqfuRjSjJgpCmXYRgPoKHD_KI/edit?pli=1&tab=t.0) cedida pela FontesLog Logística.
+[Video](https://drive.google.com/file/d/14TKngA7m74Njk3unf6Ruku70V0XuxaAJ/view) tutorial do WMS da *DDS Informática* pela [documentação](https://docs.google.com/document/d/14aKbt9V6ZCVSKR1qHGpqfuRjSjJgpCmXYRgPoKHD_KI/edit?pli=1&tab=t.0) cedida pela FontesLog Logística.
 
 
 ## Palavras-chave
