@@ -164,7 +164,7 @@ bling-v3-oauth-node/
 ```
 
 - .env
-Armazenamento seguro das credenciais (Client ID, Secret, Redirect URI).
+rmazenamento seguro das credenciais (Client ID, Secret, Redirect URI).
 
 - server.js
 Servidor Express para iniciar o fluxo e capturar o code via callback.
