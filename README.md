@@ -180,7 +180,7 @@ Aceito PRs, abrir issues ou compartilhar este projeto com outros desenvolvedores
 
 ## Palavras-chave
 
-bling api, bling oauth, bling v3, node.js bling integration, oauth2 bling, refresh token, bling express node, automação bling, yampi, yampi checkout, shopify, shopify bling, shopify integration, shopify tema, shopify partner, insomnia, postman.
+bling api, bling oauth, bling v3, node.js bling integration, oauth2 bling, refresh token, bling express node, automação bling, yampi, yampi checkout, shopify, shopify bling, shopify integration, insomnia, postman.
 
 ## Licença
 
