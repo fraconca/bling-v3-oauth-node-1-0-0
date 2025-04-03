@@ -184,7 +184,7 @@ MIT
 
 ## Créditos
 
-Criado com base no [video](https://drive.google.com/file/d/14TKngA7m74Njk3unf6Ruku70V0XuxaAJ/view) e tutorial de integração com o WMS da Fontes.Log pela [documentação](https://docs.google.com/document/d/14aKbt9V6ZCVSKR1qHGpqfuRjSjJgpCmXYRgPoKHD_KI/edit?pli=1&tab=t.0) da DDS Informática.
+Criado com base no [video](https://drive.google.com/file/d/14TKngA7m74Njk3unf6Ruku70V0XuxaAJ/view) e tutorial de integração com o WMS da Fontes.Log pela [documentação](https://docs.google.com/document/d/14aKbt9V6ZCVSKR1qHGpqfuRjSjJgpCmXYRgPoKHD_KI/edit?pli=1&tab=t.0) da *DDS Informática*.
 
 
 ## Palavras-chave
