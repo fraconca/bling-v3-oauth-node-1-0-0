@@ -2,11 +2,10 @@
 
 Este projeto é uma automação completa do processo de geração de tokens OAuth2 de acesso (`access_token` e `refresh_token`) da **API Bling V3**, utilizando Node.js + Express + SQLite sem precisar do Insomnia ou Postman.
 
-> Ideal para quem deseja integrar o Bling V3 com sistemas externos (ex: WMS, ERP, etc.) sem precisar usar o Insomnia manualmente.
-
 ## Por que automatizar isso?
 
-O Bling usa OAuth 2.0 para autenticação, mas o processo de gerar tokens pode ser manual e repetitivo. Esse projeto automatiza isso para você, de forma segura e reutilizável.
+O Bling usa OAuth 2.0 para autenticação, mas o processo de gerar tokens pode ser manual e repetitivo. 
+Esse projeto automatiza isso para você, de forma segura e reutilizável.
 
 ## Requisitos
 
@@ -132,7 +131,6 @@ node server.js
 Você será redirecionado automaticamente para autorizar a aplicação. 
 - Clique em *Autorizar*
 
-Obs.: Caso não seja redireiconado copie o *Link de Convite* e abra no navegador e clique em *Autorizar* e volte para o passo 6 para rodar o server.js. 
 
 #### Se tudo funcionar vai aparecer em seu navegador a mensagem: 
 
